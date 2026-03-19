@@ -1,0 +1,87 @@
+# ========================================
+# .gitignore
+# ========================================
+# Place this file in root: placementagency_v2/.gitignore
+#
+# Purpose: Prevent sensitive files from being uploaded to GitHub
+# ========================================
+
+# ========================================
+# CREDENTIALS & SECRETS (NEVER UPLOAD!)
+# ========================================
+credentials.json
+.streamlit/secrets.toml
+*.json
+!requirements.txt
+
+# ========================================
+# ENVIRONMENT & CONFIG
+# ========================================
+.env
+.env.local
+.env.*.local
+config.ini
+secrets.py
+
+# ========================================
+# PYTHON CACHE
+# ========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ========================================
+# VIRTUAL ENVIRONMENT
+# ========================================
+venv/
+env/
+ENV/
+.venv
+
+# ========================================
+# IDE & EDITOR FILES
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ========================================
+# STREAMLIT CACHE
+# ========================================
+.streamlit/cache/
+
+# ========================================
+# LOG FILES
+# ========================================
+*.log
+logs/
+
+# ========================================
+# TEST & BUILD FILES
+# ========================================
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ========================================
+# OS FILES
+# ========================================
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ========================================
+# TEMPORARY FILES
+# ========================================
+*.tmp
+*.temp
+*.bak
+*.backup
